@@ -1,0 +1,326 @@
+/* General Body Styling */
+body {
+    background-color: #FDF6F9; /* Light Pinkish White */
+    color: #3D0C02; /* Dark Maroon for text */
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.checkout-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Step Indicators */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step, .active-step {
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.step {
+    background-color: #D3A7B3;
+    color: white;
+}
+
+.active-step {
+    background-color: #800000;
+    color: white;
+}
+
+/* Form Styling */
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #D3A7B3;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #800000;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn, .next-btn, .place-order-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #800000;
+    color: white;
+}
+
+.back-btn:hover, .next-btn:hover, .place-order-btn:hover {
+    background-color: #3D0C02;
+}
+
+/* Error Message */
+.error-msg {
+    color: #FF0000;
+    margin-bottom: 15px;
+}
+
+/* Cart Items */
+.cart-item {
+    background-color: #FCE8EC;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #800000;
+}
+
+/* Order Summary */
+.order-summary {
+    background-color: #FFF0F3; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #D3A7B3;
+}
+
+/* Payment Section */
+.payment-step {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid #D3A7B3;
+}
+
+/* Improved Order Summary Layout */
+.payment-details {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #D3A7B3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.summary-section {
+    flex: 1;
+}
+
+.subtotal-section {
+    text-align: right;
+    flex: 1;
+}
+
+.summary-title {
+    color: #800000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.summary-item {
+    margin-bottom: 10px;
+    color: #3D0C02;
+}
+
+.subtotal {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #800000;
+}
+
+.bill-list {
+    margin-top: 20px;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.bill-item.total {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #D3A7B3;
+    margin: 15px 0;
+}
+
+
+/* Next Button Aligned to the Right */
+.navigation-buttons-right {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Confirm Order Button Centered */
+.confirm-order-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.place-order-btn {
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: black;
+}
+
+/* Connecting Lines between Steps */
+.steps {
+    position: relative;
+}
+
+/* The gray line behind the steps */
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    right: 12%;
+    height: 4px;
+    background-color: #D3A7B3;
+    z-index: 0;
+}
+
+/* The animated progress line */
+.steps .progress-line {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    height: 4px;
+    background-color: #800000;
+    z-index: 1;
+    transition: width 0.4s;
+}
+
+/* Adjusting progress-line based on step */
+.step[data-step="1"] .progress-line {
+    width: 0%;
+}
+
+.step[data-step="2"] .progress-line {
+    width: 45%;
+}
+
+.step[data-step="3"] .progress-line {
+    width: 100%;
+}
+
+
+
+/* Improved Animated Progress Line */
+.steps {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* The gray line behind the steps */
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #D3A7B3;
+    z-index: 0;
+    border-radius: 2px;
+}
+
+/* The animated progress line */
+.steps .progress-line {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    height: 4px;
+    background-color: #800000;
+    z-index: 1;
+    transition: width 0.4s;
+}
+
+/* Step Styling */
+.step, .active-step {
+    position: relative;
+    z-index: 2; /* Ensure steps are above the line */
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Inactive Step */
+.step {
+    background-color: #D3A7B3;
+    color: white;
+}
+
+/* Active Step */
+.active-step {
+    background-color: #800000;
+    color: white;
+}
+
+/* Adding Animated Arrows */
+.step::after {
+    content: "→";
+    margin-left: 8px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Removing Arrow for Last Step */
+.steps .step:last-child::after {
+    content: "";
+}
+
+/* When the step is active, make the arrow white */
+.active-step::after {
+    color: white;
+}
+
+
+.cart-item p {
+    margin: 5px 10px; /* Adds vertical space between paragraphs */
+}
+

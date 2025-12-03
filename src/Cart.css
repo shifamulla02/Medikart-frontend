@@ -1,0 +1,84 @@
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.cart-left {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.cart-right {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  border: 1px solid #ddd;
+}
+
+.item-details {
+  display: flex;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  margin-left: 5px;
+  color: grey;
+}
+
+.discount {
+  color: orange;
+  margin-left: 10px;
+}
+
+.item-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-actions button:hover {
+  background-color: #d15641;
+}
+
+.payment-summary p {
+  margin: 10px 0;
+}
+
+.order-total {
+  font-weight: bold;
+  background-color: yellow;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.login-btn {
+  padding: 10px 15px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}

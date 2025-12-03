@@ -1,0 +1,566 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add space between category items */
+  margin: 20px 0; /* Add space around the section */
+}
+
+.category-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid #ccc; /* Optional: Border for better visibility */
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background */
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 130px; /* Adjust width */
+}
+
+.category-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.category-icon.active {
+  border-color: #007bff; /* Highlight the active category */
+  background-color: #e9f7ff; /* Light blue background for active */
+}
+
+.category-image {
+  width: 50px; /* Adjust icon size */
+  height:50px;
+  margin-bottom: 10px; /* Space between icon and text */
+  object-fit: contain; /* Ensure the image fits well */
+}
+
+.category-icon p {
+  margin: 0;
+  font-size: 16px; /* Slightly larger text */
+  text-align: center;
+  color: #333; /* Text color */
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 40%;
+}
+
+input[type="submit"] {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.category-icon {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.category-icon.active {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
+.slider-image {
+  width: 200px;
+  margin: 10px;
+}
+
+.data-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.data-table th, .data-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+
+General Styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; /* Adjusted for readability */
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100%;
+}
+
+/* Centering Section */
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.nav {
+    background-color: maroon;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center; /* Align vertically */
+    gap: 10px; /* Space between links */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Login Box Styling */
+.login-box {
+    width: 400px;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Input Field Styling */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+/* Submit Button Styling */
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: black;
+}
+
+/* Dropdown Styling */
+.login-box select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #800000;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-box select option {
+    background-color: white;
+    color: black;
+}
+
+.login-box select:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+/* Link Styling */
+.login-box a {
+    color: maroon;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/* Message Styling */
+.login-box h2 {
+    color: #555;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* AboutUs.css */
+
+/* General Styles */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Consistent font */
+}
+
+/* About Us Container */
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;           /* Wrap boxes on smaller screens */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Align vertically */
+    gap: 40px;                 /* Space between the boxes */
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* About Us Box Styling */
+.about-us-box {
+    width: 200px;              /* Adjust width to fit larger images */
+    padding: 25px;             
+    margin: 15px;             
+    border: 1px solid #333;    /* Dark border for visibility */
+    border-radius: 15px;       /* Rounded corners */
+    background-color: white;   /* Light background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    text-align: center;        /* Center align the text inside */
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 200px;              /* Larger circular profile picture */
+    height: 200px;             
+    object-fit: cover;         /* Ensure the image fits without distortion */
+    border-radius: 50%;        /* Circle shape */
+    margin-bottom: 15px;       /* Space between image and text */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Heading Styles */
+h1 {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+/* Heading Styles */
+h3 {
+    font-size: 20px;          /* Smaller font for the names */
+    margin-bottom: 5px;
+    color: maroon;
+}
+
+/* Contact and Email Styling */
+p {
+    margin: 3px 0;            /* Smaller margin between lines */
+    font-size: 16px;          /* Smaller font for contact info */
+    color: #555;              /* Optional: Slightly lighter color for the text */
+}
+
+/* Hover effect for About Us box */
+.about-us-box:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow on hover */
+}
+
+/* Heading Styles */
+h3 {
+    font-size: 20px;          /* Smaller font for the names */
+    margin-bottom: 5px;
+    color: maroon;
+    white-space: nowrap;      /* Prevent names from breaking into multiple lines */
+    overflow: hidden;         /* Hide any overflow text */
+    text-overflow: ellipsis;  /* Add ellipsis if the text is too long */
+    width: 100%;              /* Ensure the heading takes full width of the box */
+}
+
+/* General Styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; /* Adjusted for readability */
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100%;
+}
+
+/* Centering Section */
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.nav {
+    background-color: maroon;
+    padding: 0.5px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;        /* Adjust the height of the logo */
+    margin-right: 600px;  /* Space between logo and links */
+}
+
+/* Link Styling */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 60px;      /* Space between links */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+  width: 50%;                  /* Set the width of the search bar */
+  margin: 20px auto;           /* Center the search bar and add vertical margin */
+  display: flex;               /* Use flexbox for alignment */
+  justify-content: flex-start; /* Align icon and input field to the left */
+  align-items: center;         /* Align icon and input vertically */
+}
+
+.search-bar input {
+  width: 90%;                  /* Make the input take full width of the container */
+  padding: 12px;               /* Add padding inside the input for spacing */
+  border: 1px solid #800000;   /* Maroon border */
+  border-radius: 25px;         /* Rounded corners for a smooth look */
+  font-size: 18px;             /* Set a readable font size */
+  transition: all 0.3s ease;   /* Smooth transition for focus effect */
+}
+
+.search-bar input:focus {
+  outline: none;               /* Remove the default outline on focus */
+  border: 2px solid #333;      /* Darker border on focus to highlight the input */
+}
+
+.search-bar input::placeholder {
+  color: #888;                 /* Lighter color for placeholder text */
+}
+
+.search-icon {
+  font-size: 20px;             /* Adjust the size of the search icon */
+  color: #800000;              /* Set the color to match your theme */
+  margin-right: 10px;          /* Add some space between the icon and the input */
+}
+
+/* Table Styling */
+table {
+    width: 80%;                   /* Increase table width */
+    margin-top: 20px;
+    border-collapse: collapse;    /* Improve table layout */
+    font-size: 18px;              /* Increase font size */
+}
+
+th, td {
+    padding: 10px;                /* Add spacing inside cells */
+    text-align: center;
+}
+
+th {
+    background-color: black;     /* Maroon header */
+    color: white;                 /* White text for header */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;    /* Light gray for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;        /* White for odd rows */
+}
+
+tr:hover {
+    background-color: #C0C0C0;      
+    color: white;                  /* White text on hover */
+}
+
+/* Image Slider Container */
+.image-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust to your needs */
+  justify-content: center; /* Center images */
+}
+
+/* Image Slider Styling */
+.slider-image {
+  width: 500px;    /* Adjust the width */
+  height: auto;    /* Maintain aspect ratio */
+  margin: 10px;    /* Space between images */
+  animation: slide 15s infinite linear; /* Animation to slide the images */
+}
+
+/* CSS Animation for Sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start at the left */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+/* Enquiry Form Container */
+.enquiry-form {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.8));
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    font-family: 'Times New Roman', serif;
+}
+
+ 
+
+/* Form Heading */
+.enquiry-form h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #800000;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+/* Input Fields */
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Focus Effect */
+.input-field:focus, .textarea-field:focus {
+    border-color: #800000;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.5);
+}
+
+/* Textarea Specific Styling */
+.textarea-field {
+    height: 150px;
+    resize: none;
+}
+
+/* Button Styling */
+.enquiry-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #800000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.enquiry-form button:hover {
+    background-color: #5a0000;
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px rgba(128, 0, 0, 0.4);
+}
+
+.enquiry-form button:active {
+    transform: translateY(1px);
+    background-color: #4a0000;
+}
+
+/* Message Styling */
+.enquiry-form h2.msg {
+    color: #800000;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .enquiry-form {
+        padding: 30px;
+    }
+
+    .enquiry-form h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* If needed - add this to reuse styling */
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.input-field:focus, .textarea-field:focus {
+    border-color: #800000;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.5);
+}

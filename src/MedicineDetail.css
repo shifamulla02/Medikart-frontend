@@ -1,0 +1,113 @@
+/* Base styles for the entire detail page */
+.medicine-detail {
+  font-family: 'Helvetica Neue', sans-serif;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f8fb;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #4c1c24; /* Maroonish color for general text */
+}
+
+/* Heading styles */
+.medicine-detail h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #8b0000; /* Dark Maroon color for headings */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Layout for the image and details section */
+.medicine-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+/* Image styles */
+.medicine-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medicine-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicine-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Description and details styles */
+.medicine-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+/* Description paragraph styling */
+.medicine-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4c1c24; /* Maroonish color for regular text */
+  margin-bottom: 15px;
+}
+
+.medicine-description p strong {
+  color: #7f1d23; /* Slightly darker maroon for emphasis */
+}
+
+/* Action button styling */
+button {
+  padding: 15px 30px;
+  background-color: #8b0000; /* Dark Maroon color for button */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #6e0000; /* Darker maroon when button is hovered */
+  transform: scale(1.05);
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .medicine-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .medicine-description {
+    padding: 15px;
+  }
+
+  .medicine-detail h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
