@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
  
 const firebaseConfig = {
-  apiKey: "AIzaSyDvVEz8gN5K-t3zq0HidtWP3EbYAksxXgQ",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "auth-23sept.firebaseapp.com",
   projectId: "auth-23sept",
   storageBucket: "auth-23sept.appspot.com",
@@ -10,4 +10,5 @@ const firebaseConfig = {
 };
  
 const app = initializeApp(firebaseConfig);
+
 export default app;
